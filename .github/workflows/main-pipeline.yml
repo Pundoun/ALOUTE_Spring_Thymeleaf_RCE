@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ main ] # Chạy khi có Pull Request vào nhánh main
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
   build-and-scan:
     name: Build, Scan & Push Image
