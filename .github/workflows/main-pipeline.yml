@@ -31,7 +31,7 @@ jobs:
           languages: 'java'
 
       - name: Build with Gradle (for CodeQL analysis)
-        run: ./gradlew build
+        run: ./gradlew build -x test
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
