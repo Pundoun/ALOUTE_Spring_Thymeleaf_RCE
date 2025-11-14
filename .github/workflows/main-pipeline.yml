@@ -35,8 +35,8 @@ jobs:
 
       - name: Build and Run Dependency-Check
         run: ./gradlew build dependencyCheckAnalyze -x test
-        env:
-          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+#        env:
+#          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3

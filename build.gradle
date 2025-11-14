@@ -96,9 +96,9 @@ tasks.named('test') {
 dependencyCheck {
     failBuildOnCVSS = 0 // Để SonarQube quyết định, không fail ngay
     format = 'ALL'      // Tạo cả báo cáo JSON và HTML
-    nvd {
-        apiKey = System.getenv("NVD_API_KEY")
-        // Delay để không vượt quá giới hạn request của NVD
-        delay = 2000
-    }
+//    nvd {
+//        apiKey = System.getenv("NVD_API_KEY")
+//        // Delay để không vượt quá giới hạn request của NVD
+//        delay = 2000
+//    }
 }
